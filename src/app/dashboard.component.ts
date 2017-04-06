@@ -4,7 +4,8 @@ import {Component, OnInit} from '@angular/core';
 
 @Component ({
 	selector: '<my-dashboard></my-dashboard>',
-	templateUrl: "./dashboard.component.html"
+	templateUrl: "./dashboard.component.html",
+	styleUrls: [ './dashboard.component.css' ]
 })
 export class DashboardComponent {
 	heroes: Hero[] = [];
