@@ -2,11 +2,11 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HeroDetailComponent } from './hero-detail.component';
+import { championDetailComponent } from './champion-detail.component';
 
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes.component';
-import { HeroService } from './hero.service';
+import { championsComponent } from './champions.component';
+import { championService } from './champion.service';
 import { DashboardComponent } from './dashboard.component';
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -24,10 +24,10 @@ import { AppRoutingModule }     from './app-routing.module';
 	declarations: [
 		AppComponent,
 		DashboardComponent,
-		HeroesComponent,
-		HeroDetailComponent],
+		championsComponent,
+		championDetailComponent],
 	providers: [
-		HeroService
+		championService
 	],
 	bootstrap: [AppComponent]
 })

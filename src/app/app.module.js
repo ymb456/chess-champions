@@ -8,10 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
-var hero_detail_component_1 = require("./hero-detail.component");
+var champion_detail_component_1 = require("./champion-detail.component");
 var app_component_1 = require("./app.component");
-var heroes_component_1 = require("./heroes.component");
-var hero_service_1 = require("./hero.service");
+var champions_component_1 = require("./champions.component");
+var champion_service_1 = require("./champion.service");
 var dashboard_component_1 = require("./dashboard.component");
 var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
@@ -29,11 +29,11 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             dashboard_component_1.DashboardComponent,
-            heroes_component_1.HeroesComponent,
-            hero_detail_component_1.HeroDetailComponent
+            champions_component_1.championsComponent,
+            champion_detail_component_1.championDetailComponent
         ],
         providers: [
-            hero_service_1.HeroService
+            champion_service_1.championService
         ],
         bootstrap: [app_component_1.AppComponent]
     })

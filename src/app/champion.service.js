@@ -6,22 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var mock_heroes_1 = require("./mock-heroes");
-var HeroService = (function () {
-    function HeroService() {
+var mock_champions_1 = require("./mock-champions");
+var championService = (function () {
+    function championService() {
     }
-    HeroService.prototype.getHeroes = function () {
-        return Promise.resolve(mock_heroes_1.HEROES);
+    championService.prototype.getchampions = function () {
+        return Promise.resolve(mock_champions_1.champions);
     };
     ;
-    HeroService.prototype.getHero = function (id) {
-        return this.getHeroes()
-            .then(function (heroes) { return heroes.find(function (hero) { return hero.id === id; }); });
+    championService.prototype.getchampion = function (id) {
+        return this.getchampions()
+            .then(function (champions) { return champions.find(function (champion) { return champion.id === id; }); });
     };
-    return HeroService;
+    return championService;
 }());
-HeroService = __decorate([
+championService = __decorate([
     core_1.Injectable()
-], HeroService);
-exports.HeroService = HeroService;
-//# sourceMappingURL=hero.service.js.map
+], championService);
+exports.championService = championService;
+//# sourceMappingURL=champion.service.js.map

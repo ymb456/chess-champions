@@ -8,13 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var dashboard_component_1 = require("./dashboard.component");
-var heroes_component_1 = require("./heroes.component");
-var hero_detail_component_1 = require("./hero-detail.component");
+var champions_component_1 = require("./champions.component");
+var champion_detail_component_1 = require("./champion-detail.component");
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
-    { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent },
-    { path: 'heroes', component: heroes_component_1.HeroesComponent }
+    { path: 'detail/:id', component: champion_detail_component_1.championDetailComponent },
+    { path: 'champions', component: champions_component_1.championsComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

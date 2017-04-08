@@ -8,17 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var hero_service_1 = require("./hero.service");
+var champion_service_1 = require("./champion.service");
 var core_1 = require("@angular/core");
 var DashboardComponent = (function () {
-    function DashboardComponent(heroService) {
-        this.heroService = heroService;
-        this.heroes = [];
+    function DashboardComponent(championService) {
+        this.championService = championService;
+        this.champions = [];
     }
     ;
     DashboardComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.heroService.getHeroes().then(function (heroes) { return _this.heroes = heroes.slice(1, 5); });
+        this.championService.getchampions().then(function (champions) { return _this.champions = champions.slice(12, 16); });
     };
     ;
     return DashboardComponent;
@@ -29,7 +29,7 @@ DashboardComponent = __decorate([
         templateUrl: "./dashboard.component.html",
         styleUrls: ['./dashboard.component.css']
     }),
-    __metadata("design:paramtypes", [hero_service_1.HeroService])
+    __metadata("design:paramtypes", [champion_service_1.championService])
 ], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;
 ;
